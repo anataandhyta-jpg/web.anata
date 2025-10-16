@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toko Kue Manis</title>
+  <style>
+    /* CSS LANGSUNG DI SINI */
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #4a4a4a;
+    }
+
+    header {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #fff;
+    }
+
+    .cakes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .cake-card {
+      background-color: #ffffff;
+      border: 2px solid #ffc0cb;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .cake-card:hover {
+      transform: scale(1.05);
+    }
+
+    .cake-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .cake-card button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cake-card button:hover {
+      background-color: #ff1493;
+    }
+
+    footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 15px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Toko Kue Manis</h1>
+    <p>Temukan kue lezat dengan sentuhan cinta!</p>
+  </header>
+
+  <main>
+    <section class="cakes">
+      <div class="cake-card">
+        <img src="https://via.placeholder.com/150x150?text=Kue+Strawberry" alt="Kue Strawberry">
+        <h2>Kue Strawberry</h2>
+        <p>Kue lembut dengan topping buah segar.</p>
+        <button onclick="orderCake('Kue Strawberry')">Pesan</button>
+      </div>
+      <div class="cake-card">
+        <img src="https://via.placeholder.com/150x150?text=Kue+Coklat" alt="Kue Coklat">
+        <h2>Kue Coklat</h2>
+        <p>Kue coklat pekat dengan lapisan krim manis.</p>
+        <button onclick="orderCake('Kue Coklat')">P
